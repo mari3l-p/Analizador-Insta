@@ -1,26 +1,96 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --dark-bg: #2A2D31;
+  --dark-gray: #383838;
+
+  --blue: #339FFF;
+  --white: #E4E5E7;
+  --gray: #787D87;
+
+  --red: #F07276;
+
+  /* colors for tables and data */
+  --turquoise: #5CE7DB;
+  --purple: #C272F0;
+  --yellow: #F9CF75;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .dark-bg {
+    background-color: var(--dark-bg);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* text colors */
+  .white-text {
+    color: var(--white);
+  }
+
+  .blue-text {
+    color: var(--blue);
+  }
+
+  .gray-text {
+    color: var(--gray);
+  }
+
+  .gray-dark {
+    color: var(--dark-gray);
+  }
+
+  .red-text {
+    color: var(--red);
+  }
+
+  .purple-text {
+    color: var(--purple);
+  }
+
+  .turquoise-text {
+    color: var(--turquoise);
+  }
+
+  .yellow-text {
+    color: var(--yellow);
+  }
+
+  .hover\:blue:hover {
+    color: var(--blue);
+  }
+
+  .hover\:turquoise:hover {
+    color: var(--turquoise);
+  }
+
+  .hover\:purple:hover {
+    color: var(--purple);
+  }
+
+  .border-turquoise {
+    border-color: var(--turquoise);
+  }
+
+  .border-purple {
+    border-color: var(--purple);
+  }
+
+  .center-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blue-bg {
+    background-color: var(--blue);
+  }
+
+  .blue-border {
+    border-color: var(--blue);
+  }
+
+  .steps li {
+    margin: 25px 0;
+  }
 }

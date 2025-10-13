@@ -1,14 +1,19 @@
 import "./globals.css";
 import NavLinks from "@/components/Navlinks";
 
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Analizador de Instagram', // %s will be replaced by the page's title
-    default: 'Analizador de Instagram', // The default title if a page doesn't set one
+    template: "%s | Analizador de Instagram",
+    default: "Analizador de Instagram",
   },
-}
+  description:
+    "Herramienta educativa y segura para analizar archivos de redes sociales. Sin recopilación de datos ni interacción social.",
+  other: {
+    rating: "general",
+  },
+};
 
 
 export default function RootLayout({

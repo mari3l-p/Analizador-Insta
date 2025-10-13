@@ -96,12 +96,16 @@ export default function InstaAnalyzer() {
             <DropFiles analyzeZipFile={analyzeZipFile} setShowResults={setShowResults}></DropFiles>
 
             {showResults === true ? 
-                <div>
+                <>
                     <NumbersResult numFollowers={numFollowers} numFollowing={numFollowing} numMutuos={numMutuos}></NumbersResult>
-                    <h3 className="text-xl font-medium mt-15 w-xs">Tablas de Usuarios</h3>
-                    <ResultsDisplay data={meNotFollowing} title="Usuarios que me siguen y yo no sigo" color="border-purple" hoverColor="hover:purple" textColor="purple-text"></ResultsDisplay>
-                    <ResultsDisplay data={notFollowingMe} title="Usuarios que sigo y no me siguen" color="border-turquoise" hoverColor="hover:turquoise" textColor="turquoise-text"></ResultsDisplay>
-                </div>
+                    <div className='center-element'>
+                        <h3 className="text-xl font-medium mt-15 w-xs lg:text-center">Tablas de Usuarios</h3>
+                        <div className='lg:flex lg:gap-8'>
+                        <ResultsDisplay data={meNotFollowing} title="Usuarios que me siguen y yo no sigo" color="border-purple" hoverColor="hover:purple" textColor="purple-text"></ResultsDisplay>
+                        <ResultsDisplay data={notFollowingMe} title="Usuarios que sigo y no me siguen" color="border-turquoise" hoverColor="hover:turquoise" textColor="turquoise-text"></ResultsDisplay>
+                    </div>
+                    </div>
+                </>
                 : null
             }
         </>

@@ -2,6 +2,13 @@ import SectionHeader from "@/components/SectionHeader";
 import Highlight from "./Highlight";
 import { List, GearWide } from "react-bootstrap-icons";
 
+import type { Metadata } from 'next'
+
+// Only define the specific part of the title here
+export const metadata: Metadata = {
+  title: 'Guía de Uso',
+}
+
  export default function Guia() {
     return (
       <>

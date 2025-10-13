@@ -1,5 +1,12 @@
 import SectionHeader from "@/components/SectionHeader";
 
+import type { Metadata } from 'next'
+
+// Only define the specific part of the title here
+export const metadata: Metadata = {
+  title: 'Privacidad',
+}
+
 export default function Privacidad() {
 return (
     <>

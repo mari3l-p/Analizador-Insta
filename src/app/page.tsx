@@ -1,4 +1,3 @@
-
 import "./globals.css";
 
 import SectionHeader from "@/components/SectionHeader";
@@ -6,8 +5,6 @@ import InstaAnalyzer from "@/components/InstaAnalyzer";
 
 
 export default function HomePage() {
-
-
 
   return (
     <div className="center-element">

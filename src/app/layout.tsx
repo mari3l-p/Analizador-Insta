@@ -1,6 +1,5 @@
 import "./globals.css";
 import NavLinks from "@/components/Navlinks";
-import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,14 +22,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        {/* 👇 Aquí colocas tu script de AdSense */}
-        <Script
-          id="adsense-script"
+        {/* 👇 Este script estará presente en el HTML inicial */}
+        <script
           async
-          strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7094509427442311"
           crossOrigin="anonymous"
-        />
+        ></script>
       </head>
       <body className="dark-bg white-text">
         <NavLinks />

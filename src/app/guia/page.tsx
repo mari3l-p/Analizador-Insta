@@ -1,6 +1,7 @@
 import SectionHeader from "@/components/SectionHeader";
 import Highlight from "./Highlight";
 import { List, GearWide } from "react-bootstrap-icons";
+import Link from "next/link";
 
 import type { Metadata } from 'next'
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 }
 
  export default function Guia() {
+
     return (
       <>
          <div className="center-element">
@@ -21,15 +23,18 @@ export const metadata: Metadata = {
             <div className=" w-xs mx-auto text-justify">
                <h3 className="font-medium text-lg">Exportar tu información:</h3>
                <ol className="list-decimal w-2xs mx-auto steps">
-                  <li> Haz clic en <Highlight Icon={List} text="Más" /> en la parte inferior izquierda y, luego, haz clic en <Highlight Icon={GearWide} text="Configuración"></Highlight>.</li>
+                  <li>En la aplicación de Instagram ve a tu perfil.</li>
+                  <li>Haz clic en <Highlight Icon={List} text="Más" /> en la parte superior derecha.</li>
                   <li>Haz clic en <Highlight text="Centro de cuentas" /> y, luego, en <Highlight text="Tu información y permisos" />.</li>
                   <li>Haz clic en <Highlight  text="Exportar tu información"/>.</li>
                   <li>Haz clic en <Highlight  text="Crear exportación"/>.</li>
                   <li>Selecciona el perfil del que quieres exportar información.</li>
                   <li>Haz clic en <Highlight  text="Siguiente"/>.</li>
                   <li>Selecciona <Highlight  text="Exportar al dispositivo"/>.</li>
-                  <li>Desde aquí, puedes elegir la información específica que quieres exportar, seleccionar un intervalo de fechas, el formato, el correo electrónico para notificaciones y la calidad del contenido multimedia.</li>
+                  <li>Desde aquí, puedes elegir la información específica que quieres exportar, seleccionar un intervalo de fechas <Highlight  text="(Desde un principio)"/>, el formato <Highlight  text="(JSON)"/>, el correo electrónico para notificaciones y la calidad del contenido multimedia.</li>
                   <li>Una vez que hayas personalizado la exportación, haz clic en <Highlight text="Iniciar exportación"/>.</li>
+                  <li>Ingresa la contraseña de tu perfil y espera la notificacion cuando tu descarga esté lista.</li>
+                  <li>Ingresa tu documento Zip en el <Link href="/" className="underline blue-text">Analizador de Datos</Link></li>
                </ol>
             </div>
 

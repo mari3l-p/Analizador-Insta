@@ -70,10 +70,12 @@
 
   .border-turquoise {
     border-color: var(--turquoise);
+    box-shadow: 0 4px 10px 3px rgb(92, 231, 219, 0.25);
   }
 
   .border-purple {
     border-color: var(--purple);
+    box-shadow: 0 4px 10px 3px rgb(194, 114, 240, 0.25);
   }
 
   .center-element {
